@@ -10,8 +10,15 @@ h3 {
   text-align: center;
 }
 
-button {
+/* button {
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
+} */
+
+#btns {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 500px;
 }

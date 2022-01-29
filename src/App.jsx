@@ -122,12 +122,14 @@ export default class App extends React.Component {
             <div className="App">
                 <h1>React Timer</h1>
                 <h3>{this.state.count}</h3>
-                {!this.state.isCounting ? (
-                    <button onClick={this.handleStart}>Start</button>
-                ) : (
-                    <button onClick={this.handleStop}>Stop</button>
-                )}
-                <button onClick={this.handleReset}>Reset</button>
+                <div id="btns">
+                    {!this.state.isCounting ? (
+                        <button onClick={this.handleStart}>Start</button>
+                    ) : (
+                        <button onClick={this.handleStop}>Stop</button>
+                    )}
+                    <button onClick={this.handleReset}>Reset</button>
+                </div>
             </div>
         );
     }
